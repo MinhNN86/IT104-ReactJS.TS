@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // Rest Parameter
+        let arr = [1, 2, 3, 4, 5, 6, 7];
+        let [a, ...rest] = arr
+        console.log(rest);
+
+        const multy = (...numbs) => numbs.map(e => e * 2);
+        console.log(multy(1, 2, 3));
+
+        // Spread Operator
+        let c = [1, 2, 3];
+        let d = [4, 5, 6];
+        let result = [...c, ...d];
+        console.log(result);
+
+        // default params
+        const sayHello = (name = "demo") => console.log(`Xin chao ${name}`);
+
+        sayHello();
+        sayHello("Minh");
+
+        //includes(element, start = 0)
+        let courses = ["Java", "PHP", "Javascripts"];
+        let result1 = courses.includes("Java");
+        console.log(result1);
+
+        //startsWith
+        let string = "Demo JS";
+        console.log(string.startsWith("Demo"));
+        //endsWith
+        console.log(string.endsWith("JS"));
+
+        // Class 
+        class User {
+            constructor(name, email, role) {
+                this.name = name;
+                this.email = email;
+                this.role = role;
+            }
+        }
+        // Lop con: Admin
+        class Admin extends User {
+            constructor(name, email) {
+                super(name, email, "admin");
+            }
+        }
+        // Lop con: Customer
+        class Customer extends User {
+            constructor(name, email) {
+                super(name, email, "Customer");
+            }
+        }
+
+        // Doi tuong: admin
+        const admin = new Admin("Demo", "Demo@gmail.com");
+        console.log(admin);
+        // Doi tuong: Customer
+        const customer = new Customer("Demo1", "Demo1@gmail.com");
+        console.log(customer);
+
+
+
+    </script>
+</body>
+
+</html>

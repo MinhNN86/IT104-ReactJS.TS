@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function mergeSortedArrays(...arrays) {
+            let result = [];
+
+            arrays.forEach(e => {
+                result.push(...e);
+            });
+
+            return result.sort((a, b) => a - b);
+        }
+
+        console.log(mergeSortedArrays([1, 2, 3, 5, 9], [4, 6, 7, 8]));
+    </script>
+</body>
+
+</html>
