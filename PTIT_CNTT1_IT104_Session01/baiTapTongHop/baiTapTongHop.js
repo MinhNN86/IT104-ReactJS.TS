@@ -12,4 +12,3 @@ console.log(getTopStudents(studentList));
 console.log(getClassAverage(studentList));
 console.log(getStudentByScoreRange(studentList, 5, 8));
 console.log(sortStudentsByName(studentList));
-h;
