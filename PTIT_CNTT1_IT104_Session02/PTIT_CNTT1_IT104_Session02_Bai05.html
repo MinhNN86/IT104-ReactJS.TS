@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const phoneBooks = [];
+
+        const addContact = (name, phone, email) => {
+            const contact = {
+                name,
+                phone,
+                email
+            };
+            phoneBooks.push(contact);
+        }
+
+        const displayContact = () => {
+            console.log("Danh bạ liên hệ: ");
+            phoneBooks.forEach(e => {
+                console.log(`- Ten: ${e.name}, SĐT: ${e.phone}, email: ${e.email}`);
+            })
+        }
+
+        addContact("Nguyễn An", "0901234567", "an@gmail.com");
+        addContact("Lê Nam", "0987654321", "nam@gmail.com");
+        displayContact();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function getStudentSummary(student) {
+            const { name, age, listMonhoc } = student;
+
+            const totalScore = listMonhoc.reduce((sum, subject) => sum + subject.score, 0);
+            const avgScore = +(totalScore / listMonhoc.length).toFixed(2);
+
+            let rank;
+            if (avgScore >= 8.5) {
+                rank = "Học sinh giỏi";
+            }
+        }
+    </script>
+</body>
+
+</html>
