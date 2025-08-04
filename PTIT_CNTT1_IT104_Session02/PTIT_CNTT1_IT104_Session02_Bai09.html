@@ -18,8 +18,41 @@
             let rank;
             if (avgScore >= 8.5) {
                 rank = "Học sinh giỏi";
+            } else if (avgScore >= 7) {
+                rank = "Học sinh khá";
+            } else if (avgScore >= 5) {
+                rank = "Học sinh trung bình";
+            } else {
+                rank = "Học sinh yếu";
             }
+
+            const bestSubject = listMonhoc.reduce((best, current) =>
+                current.score > best.score ? current : best
+            )
+
+            const weakestSubject = listMonhoc.reduce((weak, current) =>
+                current.score < weak.score ? current : weak
+            )
+
+            return `
+            ${name} is ${age} years old.
+            Average score: ${avgScore} → ${rank}
+            Best subject: ${bestSubject.subject} (${bestSubject.score})
+            Weakest subject: ${weakestSubject.subject} (${weakestSubject.score})`;
         }
+
+        const student = {
+            name: "Dev",
+            age: 20,
+            listMonhoc: [
+                { subject: "Math", score: 9 },
+                { subject: "English", score: 7.5 },
+                { subject: "Physics", score: 6 },
+                { subject: "Literature", score: 8.5 }
+            ]
+        };
+
+        console.log(getStudentSummary(student));
     </script>
 </body>
 
