@@ -1,0 +1,17 @@
+B1: (terminal) npm init -y // Tạo file package.json
+B2: (terminal) tsc --init // Tạo file tsconfig.json
+B3:
+- tạo file index.html
+- tạo folder dist // Chứa file JS đã chuyển từ TS
+- tạo folder scr // Chứa file TS
+B4: 
+vào file tsconfig.json sửa đường dẫn 
+rootDir: folder chứa file.ts
+outDir: folder chứa file.js đã chuyển từ file.ts
+B5: ở cuối file tsconfig.json thì thêm dòng
+"include": ["src/**/*"] // giúp TS nhận biết vị trí file cần biên dịch
+
+- Để chạy file
+B1: trỏ terminal vào file cần chạy gõ lệnh: 
+tsc-w: lệnh lắng nghe sự thay đổi file ts và biên dịch sang js
+B2: live server index.html
