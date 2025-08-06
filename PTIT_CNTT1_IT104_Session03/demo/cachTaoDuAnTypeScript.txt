@@ -9,7 +9,7 @@ vào file tsconfig.json sửa đường dẫn
 rootDir: folder chứa file.ts
 outDir: folder chứa file.js đã chuyển từ file.ts
 B5: ở cuối file tsconfig.json thì thêm dòng
-"include": ["src/**/*"] // giúp TS nhận biết vị trí file cần biên dịch
+"include": ["./src"] // giúp TS nhận biết vị trí file cần biên dịch
 
 - Để chạy file
 B1: trỏ terminal vào file cần chạy gõ lệnh: 
