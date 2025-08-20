@@ -1,0 +1,8 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+body {
+  margin: 0; /* bỏ margin mặc định của body */
+}
