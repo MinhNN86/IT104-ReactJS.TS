@@ -1,35 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import PTIT_CNTT1_IT104_Session15_Bai01 from "./components/PTIT_CNTT1_IT104_Session15_Bai01";
+import PTIT_CNTT1_IT104_Session14_Bai02 from "./components/PTIT_CNTT1_IT104_Session15_Bai02";
+import PTIT_CNTT1_IT104_Session14_Bai03 from "./components/PTIT_CNTT1_IT104_Session15_Bai03";
+import PTIT_CNTT1_IT104_Session14_Bai04 from "./components/PTIT_CNTT1_IT104_Session15_Bai04";
+import PTIT_CNTT1_IT104_Session15_Bai05 from "./components/PTIT_CNTT1_IT104_Session15_Bai05";
+import ListPost from "./components/PTIT_CNTT1_IT104_Session15_Bai06/ListPost";
+import PTIT_CNTT1_IT104_Session15_Bai07 from "./components/PTIT_CNTT1_IT104_Session15_Bai07";
+import PTIT_CNTT1_IT104_Session15_Bai08 from "./components/PTIT_CNTT1_IT104_Session15_Bai08";
+import PTIT_CNTT1_IT104_Session15_Bai09 from "./components/PTIT_CNTT1_IT104_Session15_Bai09";
+import PTIT_CNTT1_IT104_Session15_Bai10 from "./components/PTIT_CNTT1_IT104_Session15_Bai10";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      {/* <PTIT_CNTT1_IT104_Session15_Bai01 /> */}
+
+      {/* <PTIT_CNTT1_IT104_Session14_Bai02 /> */}
+
+      {/* <PTIT_CNTT1_IT104_Session14_Bai03 /> */}
+
+      {/* <PTIT_CNTT1_IT104_Session14_Bai04 /> */}
+
+      {/* <PTIT_CNTT1_IT104_Session15_Bai05 /> */}
+
+      {/* <ListPost /> */}
+
+      {/* <PTIT_CNTT1_IT104_Session15_Bai07 /> */}
+
+      {/* <PTIT_CNTT1_IT104_Session15_Bai08 /> */}
+
+      {/* <PTIT_CNTT1_IT104_Session15_Bai09 /> */}
+
+      <PTIT_CNTT1_IT104_Session15_Bai10 />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
