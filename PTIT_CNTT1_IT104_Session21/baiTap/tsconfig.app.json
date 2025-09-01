@@ -23,5 +23,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src"]
+  "include": ["src", "src/components/PTIT_CNTT1_IT104_Session21_Bai09/.tsx"]
 }
