@@ -1,3 +1,4 @@
+// npm install react-bootstrap bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Accordion } from "react-bootstrap";
 import Button from "react-bootstrap/Button";

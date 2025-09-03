@@ -7,13 +7,30 @@ import {
   FileTextOutlined,
 } from "@ant-design/icons";
 
-export default function SidebarMenu() {
+interface SidebarMenuProps {
+  collapsed: boolean;
+}
+
+export default function SidebarMenu({ collapsed }: SidebarMenuProps) {
   return (
-    <aside className="w-64 bg-[#091e36] min-h-screen text-white">
+    <aside
+      className={`${
+        collapsed ? "w-20" : "w-64"
+      } bg-[#091e36] min-h-screen text-white transition-all duration-300 mt-3`}
+    >
+      {/* <div
+        className={`h-14 flex items-center px-4 font-bold text-lg ${
+          collapsed ? "justify-center" : ""
+        }`}
+      >
+        <AppstoreOutlined className="mr-2" />
+        {!collapsed && "Tổng quan"}
+      </div> */}
       <Menu
         theme="dark"
         mode="inline"
         defaultSelectedKeys={["overview"]}
+        inlineCollapsed={collapsed}
         style={{ background: "transparent", border: "none" }}
         items={[
           {
@@ -31,8 +48,7 @@ export default function SidebarMenu() {
             icon: <UserOutlined />,
             label: "Quản lý nhân sự",
             children: [
-              { key: "employee-list", label: "Danh sách nhân viên" },
-              { key: "employee-add", label: "Thêm nhân viên" },
+              { key: "employee-list", label: "Quản lý nhân viên" },
               { key: "employee-department", label: "Quản lý phòng ban" },
               { key: "employee-position", label: "Quản lý chức vụ" },
             ],

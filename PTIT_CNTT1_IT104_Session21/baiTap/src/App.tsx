@@ -7,8 +7,7 @@ import PTIT_CNTT1_IT104_Session21_Bai05 from "./components/PTIT_CNTT1_IT104_Sess
 import PTIT_CNTT1_IT104_Session21_Bai06 from "./components/PTIT_CNTT1_IT104_Session21_Bai06";
 import PTIT_CNTT1_IT104_Session21_Bai07 from "./components/PTIT_CNTT1_IT104_Session21_Bai07";
 import PTIT_CNTT1_IT104_Session21_Bai08 from "./components/PTIT_CNTT1_IT104_Session21_Bai08";
-import PTIT_CNTT1_IT104_Session21_Bai09_1 from "./components/PTIT_CNTT1_IT104_Session21_Bai09(1)/PTIT_CNTT1_IT104_Session21_Bai09_1";
-import PTIT_CNTT1_IT104_Session21_Bai09 from "./components/PTIT_CNTT1_IT104_Session21_Bai09/PTIT_CNTT1_IT104_Session21_Bai09";
+import PTIT_CNTT1_IT104_Session21_Bai09 from "./components/baiTapTongHop/PTIT_CNTT1_IT104_Session21_Bai09";
 
 function App() {
   return (
@@ -29,9 +28,7 @@ function App() {
 
       {/* <PTIT_CNTT1_IT104_Session21_Bai08 /> */}
 
-      {/* <PTIT_CNTT1_IT104_Session21_Bai09 /> */}
-
-      <PTIT_CNTT1_IT104_Session21_Bai09_1 />
+      <PTIT_CNTT1_IT104_Session21_Bai09 />
     </>
   );
 }
