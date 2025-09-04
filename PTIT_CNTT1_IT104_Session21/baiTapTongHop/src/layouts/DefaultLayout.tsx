@@ -1,18 +1,12 @@
 import React, { useState } from "react";
-import {
-  MenuFoldOutlined,
-  MenuUnfoldOutlined,
-  UploadOutlined,
-  UserOutlined,
-  VideoCameraOutlined,
-} from "@ant-design/icons";
+
 import { Breadcrumb, Layout, theme } from "antd";
-import SideBar from "../components/sideBar";
+import SideBar from "../components/SideBar";
 import HeaderBar from "../components/HeaderBar";
 import { Footer } from "antd/es/layout/layout";
 import ContentEmployee from "../components/ContentEmployee";
 
-const { Header, Sider, Content } = Layout;
+const { Sider, Content } = Layout;
 
 export default function DefaultLayout() {
   const [collapsed, setCollapsed] = useState(false);
@@ -51,7 +45,7 @@ export default function DefaultLayout() {
             <ContentEmployee />
           </div>
         </Content>
-        <Footer style={{ textAlign: "center" }}>
+        <Footer style={{ textAlign: "center", background: "#94A3B8" }}>
           ©{new Date().getFullYear()} Created by MinhNN
         </Footer>
       </Layout>
