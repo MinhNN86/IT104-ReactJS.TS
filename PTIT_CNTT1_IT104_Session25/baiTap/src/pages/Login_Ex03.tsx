@@ -17,7 +17,6 @@ export default function Login_Ex03() {
   const { token } = theme.useToken();
 
   const onFinish = async (values: User) => {
-    // TODO: gọi API đăng nhập
     console.log("submit:", values);
     const userData: User[] | [] = JSON.parse(
       localStorage.getItem("userData") || "[]"
