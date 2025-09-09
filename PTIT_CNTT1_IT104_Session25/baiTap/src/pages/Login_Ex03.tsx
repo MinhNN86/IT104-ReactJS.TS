@@ -5,7 +5,7 @@ import {
 } from "@ant-design/pro-components";
 import { notification, Space, theme } from "antd";
 import { MailOutlined, LockOutlined } from "@ant-design/icons";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 interface User {
   email?: string;
