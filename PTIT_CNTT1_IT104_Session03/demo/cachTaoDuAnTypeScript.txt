@@ -3,7 +3,7 @@ B2: (terminal) tsc --init // Tạo file tsconfig.json
 B3:
 - tạo file index.html
 - tạo folder dist // Chứa file JS đã chuyển từ TS
-- tạo folder scr // Chứa file TS
+- tạo folder src // Chứa file TS
 B4: 
 vào file tsconfig.json sửa đường dẫn 
 rootDir: folder chứa file.ts
