@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const promise1 = new Promise((_, reject) =>
+        setTimeout(reject, 300, "Lỗi từ Promise 01")
+      );
+      const promise2 = new Promise((resolve) =>
+        setTimeout(resolve, 1000, "Thành công từ Promise 02")
+      );
+      const promise3 = new Promise((resolve) =>
+        setTimeout(resolve, 500, "Thành công từ Promise 03")
+      );
+
+      Promise.race([promise1, promise2, promise3])
+        .then((result) => {
+          console.log("Kết quả đầu tiên: ", result);
+        })
+        .catch((error) => {
+          console.log("Lỗi đầu tiên: ", error);
+        });
+    </script>
+  </body>
+</html>

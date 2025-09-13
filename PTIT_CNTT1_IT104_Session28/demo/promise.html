@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // tạo promise
+      const promise = new Promise((resolve, reject) => {
+        //Tạo 1 tác vụ mất thời gian
+        setTimeout(() => {
+          if (true) {
+            resolve("Nguyễn Văn A");
+          } else {
+            reject("Đã có lỗi xảy ra");
+          }
+        }, 2000);
+      });
+      // triển khai promise
+      promise
+        // Thành công
+        .then((result) => {
+          console.log(result);
+        })
+        // Thất bại
+        .catch((error) => console.log(error))
+        .finally(() => {
+          // Chạy khi promise thành công hoặc là thất bại
+          //Dọn dẹp bộ nhớ, tắt các hiệu ứng
+          console.log("Hoàn thành chương trình");
+        });
+    </script>
+  </body>
+</html>

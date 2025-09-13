@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const wait = (second) => {
+            const start = Data.now();
+            while (Date.now() - start < second * 1000) { }
+        }
+        console.log("start");
+        wait(3); // đợi 3 giây mới tiếp tục chương trình
+        console.log("end");
+    </script>
+</body>
+
+</html>

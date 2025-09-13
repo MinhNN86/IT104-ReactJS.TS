@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const delayStep = (stepName, delay) => {
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            console.log(`Hoàn thành ${stepName}`);
+            resolve(stepName);
+          }, delay);
+        });
+      };
+
+      delayStep("Bước 1", 1000)
+        .then((result1) => {
+          console.log("Hoàn thành", result1);
+          return delayStep("Bước 2: ", 1000);
+        })
+        .then((result2) => {
+          console.log("Hoàn thành", result2);
+          return delayStep("Bước 3: ", 1000);
+        })
+        .then((result3) => {
+          console.log("Hoàn thành chuỗi Promise: ", result3);
+        })
+        .catch((error) => {
+          console.log("Error: ", error);
+        });
+    </script>
+  </body>
+</html>

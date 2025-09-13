@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      const getUserName = () => {
+        console.log("Nguyễn Văn A");
+      };
+
+      // Tạo 1 hàm sử dụng callback
+      const demoCallback = (callback) => {
+        setTimeout(() => {
+          callback();
+        }, 1000);
+
+        console.log("1");
+        console.log("2");
+        console.log("3");
+        console.log("4");
+      };
+
+      demoCallback(getUserName);
+    </script>
+  </body>
+</html>

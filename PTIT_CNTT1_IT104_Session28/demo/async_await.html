@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const getData = () => {
+        return new Promise((resolve, reject) => {
+          setTimeout(resolve, 1000, "Lấy dữ liệu thành công");
+        });
+      };
+
+      // Tạo hàm async
+      const fetchData = async () => {
+        try {
+          //Chạy vào khi Promise thành công
+          const data = await getData();
+          console.log("Data: ", data);
+        } catch (error) {
+          // Chạy vào khi Promise thất bại
+          console.error("Error: ", error);
+        } finally {
+          console.log("Hoàn thành chương trình");
+        }
+      };
+
+      fetchData();
+    </script>
+  </body>
+</html>

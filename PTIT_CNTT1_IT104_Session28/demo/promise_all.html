@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const task = (taskName, delay, shouldFail = false) => {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            if (shouldFail) {
+              reject(`${taskName} thất bại`);
+            } else {
+              resolve(`Hoàn thành ${taskName}`);
+            }
+          }, delay);
+        });
+      };
+
+      const promise1 = task("Tác vụ 1", 1000);
+      const promise2 = task("Tác vụ 2", 500);
+      const promise3 = task("Tác vụ 3", 1500);
+
+      Promise.all([promise1, promise2, promise3])
+        .then((results) => {
+          console.log("Tất cả các tác vụ hoàn thành: ", results);
+        })
+        .catch((error) => {
+          console.log("Error: ", error);
+        });
+    </script>
+  </body>
+</html>
