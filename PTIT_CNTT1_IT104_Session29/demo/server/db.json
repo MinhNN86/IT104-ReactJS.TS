@@ -1,0 +1,83 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "age": 20
+    },
+    {
+      "id": 2,
+      "name": "Linda",
+      "age": 22
+    },
+    {
+      "id": 3,
+      "name": "Nguyễn Văn A",
+      "age": 35
+    },
+    {
+      "id": 4,
+      "name": "Nguyễn Văn B",
+      "age": 25
+    },
+    {
+      "id": 5,
+      "name": "Trần Thị C",
+      "age": 19
+    },
+    {
+      "id": 6,
+      "name": "Lê Văn D",
+      "age": 21
+    },
+    {
+      "id": 7,
+      "name": "Phạm Thị E",
+      "age": 23
+    },
+    {
+      "id": 8,
+      "name": "Ngô Văn F",
+      "age": 24
+    },
+    {
+      "id": 9,
+      "name": "Bùi Thị G",
+      "age": 22
+    },
+    {
+      "id": 10,
+      "name": "Đỗ Văn H",
+      "age": 20
+    },
+    {
+      "id": 11,
+      "name": "Vũ Thị I",
+      "age": 21
+    },
+    {
+      "id": 12,
+      "name": "Hoàng Văn K",
+      "age": 26
+    }
+  ],
+  "product": [],
+  "carts": [],
+  "todos": [
+    {
+      "name": "Todo Updated",
+      "completed": true,
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Deploy to production",
+      "completed": true
+    },
+    {
+      "name": "Build web app",
+      "completed": false,
+      "id": 4
+    }
+  ]
+}

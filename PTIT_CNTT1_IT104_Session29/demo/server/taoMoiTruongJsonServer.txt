@@ -1,0 +1,7 @@
+- Server (tạo API):
++ npm init --y (Tạo file package.json)
++ npm i json-server@0.17.4 (tải thư viện json-server)
++ tạo file db.json ( để lưu trữ dữ liệu )
++ Thêm dữ liệu mẫu vào db.json
++ Cấu hình package.json:
+    . "scripts" => "start": "json-server --watch db.json" (Thêm lệnh này để khởi động server)

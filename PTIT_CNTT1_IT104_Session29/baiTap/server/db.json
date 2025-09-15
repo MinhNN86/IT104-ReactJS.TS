@@ -1,0 +1,190 @@
+{
+  "product": [
+    {
+      "id": "1",
+      "product_name": "Tesla Cybertruck",
+      "image": "https://cellphones.com.vn/sforum/wp-content/uploads/2024/03/trai-qua-10000-dam-voi-tesla-cybertruck-2.jpg",
+      "price": 10000,
+      "quantity": 10,
+      "created_at": "13/09/2025"
+    },
+    {
+      "id": "2",
+      "product_name": "iPhone 15 Pro Max",
+      "image": "https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg",
+      "price": 35000,
+      "quantity": 20,
+      "created_at": "13/09/2025"
+    },
+    {
+      "id": "3",
+      "product_name": "MacBook Air M3",
+      "image": "https://macone.vn/wp-content/uploads/2024/09/Apple-MacBook-Air-2-up-hero-240304.jpg",
+      "price": 45000,
+      "quantity": 15,
+      "created_at": "13/09/2025"
+    },
+    {
+      "id": "4",
+      "product_name": "Samsung Galaxy S24 Ultra",
+      "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/s/ss-s24-ultra-xam-222.png",
+      "price": 32000,
+      "quantity": 12,
+      "created_at": "13/09/2025"
+    },
+    {
+      "id": "5",
+      "product_name": "Sony WH-1000XM5",
+      "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/r/group_172_2.png",
+      "price": 9000,
+      "quantity": 25,
+      "created_at": "13/09/2025"
+    }
+  ],
+  "students": [
+    {
+      "id": "1",
+      "student_name": "Nguyễn Văn ABC",
+      "email": "nva@gmail.com",
+      "address": "Hà Nội",
+      "phone": "0987654321",
+      "status": true,
+      "created_at": "14/09/2025"
+    },
+    {
+      "id": "2",
+      "student_name": "Trần Thị B",
+      "email": "ttb@gmail.com",
+      "address": "Hải Phòng",
+      "phone": "0912345678",
+      "status": false,
+      "created_at": "14/09/2025"
+    },
+    {
+      "id": "3",
+      "student_name": "Lê Văn C",
+      "email": "lvc@gmail.com",
+      "address": "Đà Nẵng",
+      "phone": "0909123456",
+      "status": true,
+      "created_at": "14/09/2025"
+    },
+    {
+      "id": "4",
+      "student_name": "Phạm Thị D",
+      "email": "ptd@gmail.com",
+      "address": "Cần Thơ",
+      "phone": "0988123456",
+      "status": false,
+      "created_at": "14/09/2025"
+    },
+    {
+      "id": "5",
+      "student_name": "Hoàng Văn E",
+      "email": "hve@gmail.com",
+      "address": "Nghệ An",
+      "phone": "0977123456",
+      "status": true,
+      "created_at": "14/09/2025"
+    },
+    {
+      "id": "6",
+      "student_name": "Phan Thị F",
+      "email": "ptf@gmail.com",
+      "address": "Quảng Ninh",
+      "phone": "0911222333",
+      "status": false,
+      "created_at": "15/09/2025"
+    },
+    {
+      "id": "7",
+      "student_name": "Đỗ Văn G",
+      "email": "dvg@gmail.com",
+      "address": "Bắc Ninh",
+      "phone": "0933444555",
+      "status": true,
+      "created_at": "15/09/2025"
+    },
+    {
+      "id": "8",
+      "student_name": "Ngô Thị H",
+      "email": "nth@gmail.com",
+      "address": "Nam Định",
+      "phone": "0944555666",
+      "status": false,
+      "created_at": "15/09/2025"
+    },
+    {
+      "id": "9",
+      "student_name": "Vũ Văn I",
+      "email": "vvi@gmail.com",
+      "address": "Thái Bình",
+      "phone": "0955666777",
+      "status": true,
+      "created_at": "15/09/2025"
+    },
+    {
+      "id": "10",
+      "student_name": "Bùi Thị K",
+      "email": "btk@gmail.com",
+      "address": "Thanh Hóa",
+      "phone": "0966777888",
+      "status": false,
+      "created_at": "15/09/2025"
+    },
+    {
+      "id": "11",
+      "student_name": "Tạ Văn L",
+      "email": "tvl@gmail.com",
+      "address": "Hà Nam",
+      "phone": "0977888999",
+      "status": true,
+      "created_at": "15/09/2025"
+    },
+    {
+      "id": "12",
+      "student_name": "Lý Thị M",
+      "email": "ltm@gmail.com",
+      "address": "Ninh Bình",
+      "phone": "0988999000",
+      "status": false,
+      "created_at": "15/09/2025"
+    },
+    {
+      "id": "13",
+      "student_name": "Trịnh Văn N",
+      "email": "tvn@gmail.com",
+      "address": "Phú Thọ",
+      "phone": "0999000111",
+      "status": true,
+      "created_at": "15/09/2025"
+    },
+    {
+      "id": "14",
+      "student_name": "Đặng Thị O",
+      "email": "dto@gmail.com",
+      "address": "Vĩnh Phúc",
+      "phone": "0900111222",
+      "status": false,
+      "created_at": "15/09/2025"
+    },
+    {
+      "id": "15",
+      "student_name": "Phùng Văn P",
+      "email": "pvp@gmail.com",
+      "address": "Yên Bái",
+      "phone": "0911222334",
+      "status": true,
+      "created_at": "15/09/2025"
+    },
+    {
+      "id": "4187",
+      "student_name": "123",
+      "email": "123",
+      "address": "213",
+      "phone": "123",
+      "status": true,
+      "created_at": "15/9/2025"
+    }
+  ]
+}
