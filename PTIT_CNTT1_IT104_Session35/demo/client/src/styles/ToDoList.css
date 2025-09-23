@@ -1,0 +1,122 @@
+/* Nền xám nhạt */
+.page {
+  min-height: 100svh;
+  background: #f3f3f3;
+  display: grid;
+  place-items: center;
+  padding: 32px 16px;
+}
+
+/* Khung trắng bo tròn + đổ bóng */
+.card {
+  width: min(500px, 100%);
+  background: #fff;
+  border-radius: 12px;
+  padding: 28px 24px 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Tiêu đề */
+.title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 6px 0 24px;
+  color: #333;
+}
+
+/* Hàng nhập + nút */
+.row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.input {
+  height: 42px;
+  border: 1px solid #e3e3e3;
+  border-radius: 6px;
+  padding: 0 14px;
+  font-size: 14px;
+  outline: none;
+}
+.input:focus {
+  border-color: #bdbdbd;
+}
+
+/* Danh sách */
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 12px 10px;
+  border-radius: 8px;
+  background: #fafafa;
+  margin: 10px 0;
+}
+.left {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+}
+.text {
+  font-size: 15px;
+  color: #333;
+}
+.text.done {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.empty {
+  text-align: center;
+  color: #888;
+  padding: 18px 0 8px;
+}
+
+/* Nút chung */
+.btn {
+  border: none;
+  border-radius: 6px;
+  height: 42px;
+  padding: 0 14px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-green {
+  background: #2ebf65;
+} /* Thêm công việc */
+.btn-orange {
+  background: #f39c12;
+} /* Sửa */
+.btn-red {
+  background: #e74c3c;
+} /* Xóa */
+
+.actions {
+  display: inline-flex;
+  gap: 8px;
+}
+
+/* Responsive nhỏ hơn 480px */
+@media (max-width: 480px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+  .btn {
+    width: 100%;
+  }
+}

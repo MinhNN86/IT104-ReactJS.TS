@@ -1,0 +1,10 @@
+- Tải thư viện Redux-Toolkit: npm i react-redux @reduxjs/toolkit @types/react-redux
+- Tạo các folder trong src
++ components: Chứa các thành phần UI (React Component).
++ apis: Chứa các hàm gọi API, xử lý dữ liệu từ server.
++ actions: Chứa các action creator, định nghĩa các hành động gửi lên store.
++ slices: Chứa các reducer, xử lý logic cập nhật state.
++ stores: Chứa cấu hình store, combine reducer và middleware.
++ hooks: Chứa file customRedux
+- Tạo store chung cho ứng dụng
+- Bọc Provider ở main.tsx
