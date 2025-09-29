@@ -1,0 +1,25 @@
+src/components/UploadFile.tsx: Cấu hình upload file lên cloudinary
+Link API cloudinary:
+- https://api.cloudinary.com/v1_1/<cloud_name>/image/upload
++ Hình ảnh: image/upload,
++ Video: video/upload,
++ Với file khác: raw/upload
+
+
+Dịch vụ được cloudinary cung cấp ( thêm các thuộc tính sau ulr upload)
+1.	Resize (Thay đổi kích thước):
+w_{width},h_{height}
+2.	Crop (Cắt ảnh):
+c_crop,w_{width},h_{height}
+3.	Gravity Crop (Cắt tự động theo nội dung):
+c_crop,g_auto,w_300,h_300
+4.	Round Corners (Bo góc ảnh):
+r_{radius}
+5.	Animated GIF/WebP/MP4 (Chuyển định dạng động):
+f_{format} (ví dụ: webp, gif, mp4)
+6.	Effects (Hiệu ứng):
+	•	Làm mờ: e_blur:300
+	•	Tăng độ tương phản: e_improve
+7.	Format Optimization (Tối ưu định dạng và chất lượng)
+8.	Overlay Text hoặc Logo (Chèn chữ hoặc hình):
+l_text:{font}_{size}:{text}
