@@ -1,0 +1,75 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "code": "DT001",
+      "name": "Bàn phím cơ Rainy75",
+      "category": "Bàn phím",
+      "price": 2040000,
+      "image": "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/22-min-1702460125985-1581efc5-d174-4c59-87b5-e582d9684396.png?v=1729429780613",
+      "status": "active"
+    },
+    {
+      "id": "2",
+      "code": "DT002",
+      "name": "Chuột không dây Logitech G304",
+      "category": "Chuột",
+      "price": 250000,
+      "image": "https://anphat.com.vn/media/product/26235_logitech_g304_lightspeed_wireless_anphatcomputer_1.jpg",
+      "status": "active"
+    },
+    {
+      "id": "3",
+      "code": "DT003",
+      "name": "Tai nghe gaming Razer Kraken",
+      "category": "Tai nghe",
+      "price": 1590000,
+      "image": "https://bizweb.dktcdn.net/thumb/1024x1024/100/329/122/products/tai-nghe-gaming-razer-kraken-v3-x-7-1-surround-rz04-03750100-r3m12-121be6de-6aaf-4543-a5fc-d77a91aa03b7.png?v=1742981329820",
+      "status": "inactive"
+    },
+    {
+      "id": "4",
+      "code": "DT004",
+      "name": "Laptop Dell Inspiron 15",
+      "category": "Máy tính",
+      "price": 15990000,
+      "image": "https://product.hstatic.net/200000710483/product/611nhsehs5l._ac_sx679__cbea54784c0e4bf78b8fdf17398f4394_1024x1024.jpg",
+      "status": "active"
+    },
+    {
+      "id": "2e51502d-1302-45a3-a764-4677c604bd9a",
+      "code": "123",
+      "name": "123",
+      "category": "Bàn phím",
+      "price": 123,
+      "image": "",
+      "status": "active"
+    }
+  ],
+  "category": [
+    {
+      "id": "1",
+      "name": "Bàn phím",
+      "description": "Các loại bàn phím cơ, văn phòng, gaming...",
+      "status": "active"
+    },
+    {
+      "id": "2",
+      "name": "Chuột",
+      "description": "Chuột máy tính các loại",
+      "status": "active"
+    },
+    {
+      "id": "3",
+      "name": "Tai nghe",
+      "description": "Tai nghe gaming, tai nghe nhạc",
+      "status": "active"
+    },
+    {
+      "id": "4",
+      "name": "Máy tính",
+      "description": "Laptop, máy tính để bàn, workstation",
+      "status": "active"
+    }
+  ]
+}
